@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-01T07:59:50.041Z",
+        "line": 4,
+        "name": "data table",
+        "description": "",
+        "id": "this-is-data-table;data-table",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the url",
+            "match": {
+              "location": "com.ip.stepdefinition.DataTableEx.theUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters username and password",
+            "match": {
+              "location": "com.ip.stepdefinition.DataTableEx.userEntersUsernameAndPassword(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "allensmith@gmail.com",
+                  "smith@123"
+                ]
+              },
+              {
+                "cells": [
+                  "albertgrey@gmail.com",
+                  "albert@345"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate profile page",
+            "match": {
+              "location": "com.ip.stepdefinition.DataTableEx.validateProfilePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "This is data table",
+    "description": "",
+    "id": "this-is-data-table",
+    "keyword": "Feature",
+    "uri": "classpath:features/data_table.feature",
+    "tags": []
+  }
+]
